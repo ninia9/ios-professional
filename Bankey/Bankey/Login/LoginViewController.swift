@@ -102,6 +102,8 @@ extension LoginViewController {
 extension LoginViewController {
     @objc func signInTapped(sender: UIButton) {
         errorMessageLabel.isHidden = true
+        loginView.usernameTextField.resignFirstResponder()
+        loginView.passwordTextField.resignFirstResponder()
         login()
     }
     
